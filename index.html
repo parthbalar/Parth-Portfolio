@@ -22,6 +22,18 @@
 
 <body id="top" class="dark_theme">
 
+<!-- download pdf script -->
+<script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = './Parth-Resume.pdf';
+            link.download = 'Parth-Resume.pdf'; 
+            document.body.appendChild(link);
+            link.click();
+        }
+    </script>
+
+  
 <!-- Header -->
 
   <header class="header" data-header>
@@ -213,7 +225,7 @@
           </p>
           
           <div class="btn-group">
-            <button class="btn btn-primary">Download Resume</button>
+            <button class="btn btn-primary" onclick="downloadPDF()">Download Resume</button>
           </div>
           
         </div>
